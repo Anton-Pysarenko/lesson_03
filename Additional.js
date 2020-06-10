@@ -47,3 +47,12 @@ books [0].getTheBook( "Иван Сидоренко", new Date ( 2018, 6, 25 ) )
 books [0].getBookInfo()
 books [0].returnBook()
 books [0].getBookInfo()
+
+var CreateObj = function () {}
+
+CreateObj.prototype.addProperty = function (name, value) {
+        this [name] = value 
+    }
+
+var obj = new CreateObj ()
+obj.addProperty ('Anon', '33')
